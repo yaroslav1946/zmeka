@@ -1,9 +1,9 @@
 #include <iostream>
-void print() {
-
-}
-
+#include <locale>
+#include "Game.h"
 int main() {
-	std::cout << "когда-нибудь тут будет змейка" << std::endl;
+	setlocale(LC_ALL, "RUS");
+	Game game;
+	game.start();
 	return 0;
 }
